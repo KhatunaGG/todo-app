@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo__box">
+        <img src="./img/TODO 2.png" alt="" class="logo" />
+        <button class="mode__btn">
+          <img id="moon" src="./img/moon.svg" alt="" class="logo__mode mode__moon" />
+        </button>
+      </div>
+      <div class="todo__content">
+        <form class="todo__box">
+          <div class="circle"></div>
+          <input
+            type="text"
+            class="parent__input"
+            placeholder="Create a new todo…"
+            data="dark-mode"
+          />
+        </form>
+        <div class="task__box">
+          <ul class="task__list" data="dark-mode">
+            <!-- <li class="task__item" id="" data-mode>
+              <div class="circle"></div>
+              <p class="task__p custom__letter"></p>
+              <img src="./img/cross.svg" alt="" class="delete__task" />
+            </li> 
+
+           <li class="task__item" data-mode>
+              <div class="circle"></div>
+              <p class="task__p custom__letter"></p>
+              <img src="./img/cross.svg" alt="" class="delete__task none" />
+            </li> -->
+          </ul>
+        </div>
+        <div class="edit">
+          <div class="edit__delete task__item" data="dark-mode">
+            <button class="task-count" >
+              <span class="span__count">0</span> <span class="span__count-text">item left</span>
+            </button>
+            <div class="task__item middle" data="dark-mode">
+              <button class="all">All</button>
+              <button class="activeBtn">Active</button>
+              <button class="completed">Completed</button>
+            </div>
+            <button class="clear-completed">Clear Completed</button>
+          </div>
+        </div>
+        <div class="edit__filter task__item" data="dark-mode">
+          <button class="all">All</button>
+          <button class="activeBtn">Active</button>
+          <button class="completed">Completed</button>
+        </div>
+      </form>
+    </div>
+    <footer class="footer">
+      <a href="#" class="footer__link">Drag and drop to reorder list</a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
